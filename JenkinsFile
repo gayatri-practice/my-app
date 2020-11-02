@@ -1,0 +1,10 @@
+node{
+  stage('SCM Checkout') {
+    git 'https://github.com/gayatri-practice/my-app'
+  }
+  stage('COMPILE-Package){
+    sh 'mvn package'
+  
+  }
+  
+  }
